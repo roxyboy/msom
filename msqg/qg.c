@@ -5,7 +5,7 @@ This is the driver file for qg.h.  We define the grid, the topography,
 the initial conditions and the output routines.
 
 compile with (openmp)
-qcc -lm qg.c -O3 -o qg.e -fopenmp (-llapacke)
+qcc -lm qg.c -g -O3 -o qg.e -fopenmp (-llapacke)
 export OMP_NUM_THREADS=20 (?)
 ./qg.e
 

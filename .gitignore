@@ -1,4 +1,5 @@
 outdir
+*.out
 *.e
 *.bin
 *.bas*
