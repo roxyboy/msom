@@ -631,7 +631,7 @@ void trim_whitespace(char* s) {
 
 void str2array(char *tmps2, double *array){
   char* p;
-  trim_whitespace(tmps2);
+//  trim_whitespace(tmps2);
   int len = strlen(tmps2);
   char tmps3[len];
   strcpy(tmps3, tmps2); //needed in case there is an empty line in params.in
@@ -652,7 +652,7 @@ void read_params(char* path2file)
     while(fgets(tempbuff,300,fp)) {
       char* tmps1 = strtok(tempbuff, "=");
       char* tmps2 = strtok(NULL, "=");
-      trim_whitespace(tmps1);
+//      trim_whitespace(tmps1);
       if      (strcmp(tmps1,"N")    ==0) { N     = atoi(tmps2); }
       else if (strcmp(tmps1,"nl")   ==0) { nl    = atoi(tmps2); }
       else if (strcmp(tmps1,"ediag")==0) { ediag = atoi(tmps2); }
